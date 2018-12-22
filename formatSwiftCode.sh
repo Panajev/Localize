@@ -19,7 +19,7 @@ swiftformat Example/LocalizeExample/Sources Sources --cache ignore --indent 4 \
 --self insert \
 --wrapcollections beforefirst --wraparguments beforefirst \
 --comments ignore --commas inline \
---disable blankLinesAroundMark,hoistPatternLet,redundantParens,redundantVoidReturnType,trailingClosures
+--disable blankLinesAroundMark,hoistPatternLet,redundantParens,redundantVoidReturnType,trailingClosures,andOperator
 
 swiftlint autocorrect
 
