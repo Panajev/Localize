@@ -9,6 +9,7 @@ opt_in_rules: # some rules are only opt-in
   - empty_count
   - closure_spacing
   - fatal_error_message
+  - anyobject_protocol
   # Find all the available rules by running:
   # swiftlint rules
 included: # paths to include during linting. `--path` is ignored if present.

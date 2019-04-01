@@ -49,13 +49,13 @@ let patterns = [
  */
 let ignoredFromUnusedKeys = [String]()
 /* example
-let ignoredFromUnusedKeys = [
-    "NotificationNoOne",
-    "NotificationCommentPhoto",
-    "NotificationCommentHisPhoto",
-    "NotificationCommentHerPhoto"
-]
-*/
+ let ignoredFromUnusedKeys = [
+ "NotificationNoOne",
+ "NotificationCommentPhoto",
+ "NotificationCommentHisPhoto",
+ "NotificationCommentHerPhoto"
+ ]
+ */
 
 let masterLanguage = "en"
 
@@ -237,7 +237,7 @@ while let swiftFileLocation = enumerator?.nextObject() as? String {
         if let string = try? String(contentsOfFile: location, encoding: .utf8) {
             for p in patterns {
                 let regex = try? NSRegularExpression(pattern: p, options: [])
-                let range = NSRange(location: 0, length: (string as NSString).length) //Obj c wa
+                let range = NSRange(location: 0, length: (string as NSString).length) // Obj c wa
                 regex?.enumerateMatches(
                     in: string,
                     options: [],
