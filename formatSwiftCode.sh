@@ -15,7 +15,7 @@ function checkCommand {
 checkCommand swiftlint
 checkCommand swiftformat
 
-swiftformat Example/LocalizeExample/Sources Sources --cache ignore --indent 4 \
+swiftformat Example/LocalizeExample/Sources Sources --swiftversion 5.0 --cache ignore --indent 4 \
 --self insert \
 --wrapcollections beforefirst --wraparguments beforefirst \
 --commas inline \
